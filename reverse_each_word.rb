@@ -7,3 +7,10 @@ def reverse_each_word(phrase)
   end
   new_phrase.join(" ")
 end
+
+def reverse_each_word(phrase)
+  new_phrase = phrase.split.collect do |words|
+    words.reverse
+  end
+  new_phrase.join(" ")
+end
